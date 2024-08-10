@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alphacare</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg" />
+  </head>
+
+  <body>
+    <!-- 1. Banner -->
+    <section id="banner">
+      <img src="./assets/banner.png" alt="" />
+    </section>
+
+    <!-- 2. Main Form -->
+    <section id="main-form">
+      <form id="myForm" action="https://script.google.com/macros/s/AKfycbyqWojR4MIUlslNkwTHWdWteBwcVsHkssGW8EVxajtMiz4iWjxMOcP5IdJi-9XgwkR9Pw/exec" method="post">
+        <div class="container text-center">
+          <div
+            class="form d-flex flex-column flex-lg-row justify-content-between align-items-center"
+          >
+            <div class="field-form" style="width: 100%">
+              <img src="./assets/main-form/mobile.svg" alt="" />
+              <input
+                type="text"
+                placeholder="Enter Your Mobile No."
+                class="rounded w-100"
+                name="mobile"
+                minlength="10"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div class="field-form" style="width: 100%">
+              <img src="./assets/main-form/user.svg" alt="" />
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                class="rounded w-100"
+                name="name"
+                required
+              />
+            </div>
+            <div class="field-form" style="width: 100%">
+              <select
+                class="form-select minimal rounded"
+                id="city"
+                name="city"
+                required="true"
+              >
+                <option value="" selected="">Select Your City *</option>
+                <option value="Agra">Agra</option>
+                <option value="Amritsar">Amritsar</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Dehradun">Dehradun</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Faridabad">Faridabad</option>
+                <option value="Ghaziabad">Ghaziabad</option>
+                <option value="Greater Noida">Greater Noida</option>
+                <option value="Gurgaon">Gurgaon</option>
+                <option value="Guwahati">Guwahati</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Indore">Indore</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Jalandhar">Jalandhar</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Ludhiana">Ludhiana</option>
+                <option value="Meerut">Meerut</option>
+                <option value="Modinagar">Modinagar</option>
+                <option value="Mohali">Mohali</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Muradnagar">Muradnagar</option>
+                <option value="Noida">Noida</option>
+                <option value="Panchkula">Panchkula</option>
+                <option value="Panipat">Panipat</option>
+                <option value="Patiala">Patiala</option>
+                <option value="Pune">Pune</option>
+                <option value="Raipur">Raipur</option>
+                <option value="Ranchi">Ranchi</option>
+                <option value="Rohtak">Rohtak</option>
+                <option value="Sonipat">Sonipat</option>
+                <option value="Surat">Surat</option>
+              </select>
+            </div>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" /> You hereby affirm & authorise Healthians
+            to process the personal data as per the T&C.
+          </div>
+          <button class="del-button" type="submit">Get Free Call Now</button>
+        </div>
+      </form>
+      <p></p>
+    </section>
+
+    <!-- 3. steps -->
+    <!-- <section id="steps">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column justify-content-center align-items-center position-relative">
+                            <img src="./assets/steps/bg.png" width="100%" alt="" />
+                            <div
+                                class="text-wrapper d-flex flex-column justify-content-center align-items-center position-absolute text-center">
+                                <div class="img-wrapper">
+                                    <img src="./assets/steps/1.png" alt="" />
+                                </div>
+                                <h2>ON TIME SAMPLE COlLECTION & Report delivery</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center position-relative">
+                            <img src="./assets/steps/bg.png" width="100%" alt="" />
+                            <div
+                                class="text-wrapper d-flex flex-column justify-content-center align-items-center position-absolute text-center">
+                                <div class="img-wrapper">
+                                    <img src="./assets/steps/2.png" alt="" />
+                                </div>
+                                <h2>free report consultation</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center position-relative">
+                            <img src="./assets/steps/bg.png" width="100%" alt="" />
+                            <div
+                                class="text-wrapper d-flex flex-column justify-content-center align-items-center position-absolute text-center">
+                                <div class="img-wrapper">
+                                    <img src="./assets/steps/3.png" alt="" />
+                                </div>
+                                <h2>100% certified labs</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center position-relative">
+                            <img src="./assets/steps/bg.png" width="100%" alt="" />
+                            <div
+                                class="text-wrapper d-flex flex-column justify-content-center align-items-center position-absolute text-center">
+                                <div class="img-wrapper">
+                                    <img src="./assets/steps/4.png" alt="" />
+                                </div>
+                                <h2>certified and trained staff</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center position-relative">
+                            <img src="./assets/steps/bg.png" width="100%" alt="" />
+                            <div
+                                class="text-wrapper d-flex flex-column justify-content-center align-items-center position-absolute text-center">
+                                <div class="img-wrapper">
+                                    <img src="./assets/steps/5.png" alt="" />
+                                </div>
+                                <h2>painless blood sample collection</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- 4. we deals in -->
+    <section id="services">
+      <div class="container text-center">
+        <div class="row">
+          <h3>We deals in</h3>
+          <div
+            class="button-container d-flex justify-content-center align-items-center"
+          >
+            <button class="green-button">Pathology</button>
+            <button class="yellow-button">Radiology</button>
+          </div>
+          <h3>Most Booked Blood Tests</h3>
+        </div>
+        <div class="row card-container">
+          <div class="card-2 col-lg-3">
+            <div class="img-wrapper">
+              <img src="./assets/services/1.png" alt="" />
+              <h3>Kidney</h3>
+              <p>
+                The kidney is a vital organ of our body that is responsible for
+                removing waste.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 col-lg-3">
+            <div class="img-wrapper">
+              <img src="./assets/services/2.png" alt="" />
+              <h3>Liver</h3>
+              <p>
+                The liver regulates most chemical levels in the blood and
+                excretes a product called bile.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 col-lg-3">
+            <div class="img-wrapper">
+              <img src="./assets/services/3.png" alt="" />
+              <h3>Thyroid</h3>
+              <p>
+                Thyroid tests tell your healthcare provider how well your
+                thyroid gland works.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col-12">
+                    <button class="yellow-button">
+                        View all
+                    </button>
+                </div> -->
+        </div>
+        <div class="row">
+          <h3 class="orange-h3">Most Booked</h3>
+          <h3 class="orange-h3">Health Scans and Imaging Tests</h3>
+        </div>
+        <div class="row card-container">
+          <div class="card-2 col-lg-3">
+            <div class="img-wrapper">
+              <img src="./assets/services/5.png" alt="" />
+              <h3>Ultrasound</h3>
+              <p>
+                An ultrasound is an imaging test that uses sound waves to create
+                a picture of organs, tissues, and other structures inside the
+                body.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 col-lg-3">
+            <div class="img-wrapper">
+              <img src="./assets/services/4.png" alt="" />
+              <h3>CT Scan</h3>
+              <p>
+                A CT (computed tomography) scan is an imaging test that helps
+                healthcare providers detect diseases and injuries.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 col-lg-3">
+            <div class="img-wrapper">
+              <img src="./assets/services/6.png" alt="" />
+              <h3>X-Ray</h3>
+              <p>
+                An X-ray is a diagnostic test that uses radiation waves, called
+                x-rays, to take pictures of your body tissues.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col-12">
+                    <button class="yellow-button">
+                        View all
+                    </button>
+                </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. stats -->
+    <section id="statistics">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-sm-4 card-1">
+            <h3>2579+</h3>
+            <p>Happy User</p>
+            <div class="img-wrapper">
+              <img src="./assets/stats/1.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 card-1">
+            <h3>7169+</h3>
+            <p>Test Booked</p>
+            <div class="img-wrapper">
+              <img src="./assets/stats/2.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 card-1">
+            <h3>85+</h3>
+            <p>Trusted Labs</p>
+            <div class="img-wrapper">
+              <img src="./assets/stats/3.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 card-1">
+            <h3>100+</h3>
+            <p>Phlebotomist</p>
+            <div class="img-wrapper">
+              <img src="./assets/stats/4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6 text-lg-end">
+            <h2>WHAT OUR <br class="d-lg-block d-none" />CLIENTS SAY</h2>
+          </div>
+          <div class="col-xl-5 col-lg-6">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <div clas="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="py-5">
+                      <p class="truncate-para">
+                        “lorum Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quae nobis molestias natus impedit
+                        consequuntur enim inventore aperiam. Error commodi
+                        laudantium repellat debitis quisquam ab accusantium
+                        ratione saepe laborum consectetur? Sit!”
+                      </p>
+                    </div>
+                    <div class="title">
+                      <h5>David James</h5>
+                      <h5>Dierector</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div clas="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="py-5">
+                      <p class="truncate-para">
+                        “You guys rocked on our Social media & Website Project,
+                        Thank you Team for doing Such a Great Job ..”
+                      </p>
+                    </div>
+                    <div class="title">
+                      <h5>Girdhar</h5>
+                      <h5>Founder Of Girdhar</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div clas="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="py-5">
+                      <p class="truncate-para">
+                        “We are greatly thankful to Analog for supporting us to
+                        explore and create our name as brand on social media.
+                        The team of Analog Webmedia works with full dedication
+                        and responsibility to make the market for our brand.
+                        It’s been more than 30 days since we are connected and
+                        we are like digital family now. We appreciate the work
+                        and support the working team for best outputs in
+                        future.”
+                      </p>
+                    </div>
+                    <div class="title">
+                      <h5>Virasati</h5>
+                      <h5>Founder Of Virasati</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. terms and conditions -->
+    <section id="terms-and-conditions">
+      <div class="container">
+        <h3>Terms & Conditions:</h3>
+        <ul>
+          <li>
+            By submitting the form above, you are allowing Healthians Health
+            Advisors to call you back at your convenient time.
+          </li>
+          <li>
+            Our Health advisor and Medical team will be involved to guide you in
+            the complete cycle of the testing process and will facilitate the
+            diagnosis process for prevention of any disease.
+          </li>
+          <li>
+            Your health vitals and history will be taken for pre-diagnosis and
+            for suggesting the relevant tests through Health Karma or you can
+            also share your prescription with our medical team.
+          </li>
+          <li>
+            Once you confirm your booking, a trained Phlebotomists (Sample
+            Collector) will be assigned to visit you on your chosen time and
+            pickup address and for collection of sample. Phlebotomist may also
+            take other vitals if suggested in the pre diagnosis.
+          </li>
+          <li>
+            Your sample will then be transported to the nearest collection hub
+            maintaining the integrity of the sample and will be centrifuged
+            before sending to the lab for processing.
+          </li>
+          <li>
+            Once the results are processed in the Healthians / Partner Lab,
+            medical team at Healthians will verify the results and a smart
+            report including historical trends and vital's information submitted
+            by you along with simple interpretations will be shared with you.
+          </li>
+          <li>
+            You will also be offered a post report counselling by our Counsellor
+            as a part of the healthcare service offered to you.
+          </li>
+          <li>
+            Healthians offers 24*7 customer support to resolve any of your
+            concern during and after the entire diagnosis process.
+          </li>
+          <li>
+            Dear Customer, we are pleased on your signup with Healthians today.
+            By entering your phone number you agree that we may send you text
+            notifications, text marketing offers and health checkup reminders.
+            By signing up you provide your consent to receive communication from
+            Healthians.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 10. footer -->
+    <footer>
+      <div class="container">
+        <div class="row p-5">
+          <div class="col-lg-5 content">
+            <img src="./assets/logo.svg" alt="" />
+            <div class="content">
+              <p>"A Network of your Trusted Labs"</p>
+              <p>
+                We have a network of various labs that people trust, and we are
+                increasing their trust in thme by providing quality and
+                time-saving services to people so that their belief remains the
+                same.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 contact">
+            <h3>Contact</h3>
+            <p>
+              <img
+                src="./assets/footer/phone.svg"
+                width="20px"
+                alt=""
+              />+91-8377895401, +91-8377895404
+            </p>
+            <p>
+              <img
+                src="./assets/footer/email.svg"
+                width="20px"
+                alt=""
+              />carealpha247@gmail.com
+            </p>
+            <p>
+              <img
+                src="./assets/footer/location.svg"
+                width="20px"
+                alt=""
+              />C-3/76, 1st Floor, New Kondli, Mayur Vihar Phase-3, Delhi-96
+            </p>
+          </div>
+          <div class="col-lg-3 social">
+            <h3>Social Media</h3>
+            <p>
+              <a href="#"><img src="./assets/footer/instagram.png" alt="" /></a>
+              <a href="#"><img src="./assets/footer/facebook.png" alt="" /></a>
+              <a href="#"><img src="./assets/footer/linkedin.png" alt="" /></a>
+              <a href="#"><img src="./assets/footer/twitter.png" alt="" /></a>
+            </p>
+          </div>
+          <div class="col-12 credits d-flex justify-content-between">
+            <span>Copyright © 2022 Alpha Care 247 </span>
+            <span>
+              <a href="#">Privacy Policy</a> |
+              <a href="#">Terms & Conditions</a> |
+              <a href="#">Refund & Cancellation Policy</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 9. Call -->
+    <section id="call">
+      <div class="container-fluid text-center">
+        <h3>Talk to our Health Advisor</h3>
+        <div class="form d-flex justify-content-center align-items-center">
+          <input type="text" placeholder="Enter your 10 digit mobile number" />
+          <button>Get a free call</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
