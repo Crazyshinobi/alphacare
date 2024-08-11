@@ -451,7 +451,7 @@
           </li>
           <li>
             You will also be offered a post report counselling by our Counsellor
-            – Nishant Kaushik (9990518373) as a part of the healthcare service
+            – Sarthak (8377895404) as a part of the healthcare service
             offered to you.
           </li>
           <li>
@@ -532,13 +532,11 @@
 
     <!-- 9. Call -->
     <section id="call">
-      <form
-        action="https://script.google.com/macros/s/AKfycbyqWojR4MIUlslNkwTHWdWteBwcVsHkssGW8EVxajtMiz4iWjxMOcP5IdJi-9XgwkR9Pw/exec"
-        method="post"
+      <form id="secondForm"
       >
         <div class="container-fluid text-center">
           <h3>Talk to our Health Advisor</h3>
-          <div class="form d-flex justify-content-center align-items-center">
+          <div class="form d-flex flex-column gap-3 gap-lg-0 flex-lg-row  justify-content-center align-items-center second-form">
             <input
               type="tel"
               placeholder="Enter your 10 digit mobile number"
@@ -592,6 +590,33 @@
           .then((res) => res.text())
           .then((data) => {
             form.reset();
+            showToast("Form submitted successfully!", "success");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            showToast(
+              "There was an error submitting the form. Please try again.",
+              "error"
+            );
+          });
+      });
+    </script>
+    <script>
+      let form1 = document.querySelector("#secondForm");
+      form1.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let data1 = new FormData(form1);
+
+        fetch(
+          "https://script.google.com/macros/s/AKfycbyqWojR4MIUlslNkwTHWdWteBwcVsHkssGW8EVxajtMiz4iWjxMOcP5IdJi-9XgwkR9Pw/exec",
+          {
+            method: "POST",
+            body: data1,
+          }
+        )
+          .then((res) => res.text())
+          .then((data1) => {
+            form1.reset();
             showToast("Form submitted successfully!", "success");
           })
           .catch((error) => {
