@@ -26,11 +26,9 @@
 
     <!-- 2. Main Form -->
     <section id="main-form">
-      <form
-        id="myForm"
-        action="https://script.google.com/macros/s/AKfycbyqWojR4MIUlslNkwTHWdWteBwcVsHkssGW8EVxajtMiz4iWjxMOcP5IdJi-9XgwkR9Pw/exec"
-        method="post"
-      >
+      <div id="toast-container"></div>
+
+      <form id="myForm">
         <div class="container text-center">
           <div
             class="form d-flex flex-column flex-lg-row justify-content-between align-items-center"
@@ -67,11 +65,12 @@
                 <option value="" selected="">Select Your City *</option>
                 <option value="Delhi NCR">Delhi NCR</option>
                 <option value="Lucknow">Lucknow</option>
+                <option value="Noida">Noida</option>
               </select>
             </div>
           </div>
           <div class="checkbox">
-            <input type="checkbox" /> You hereby affirm & authorise Healthians
+            <input type="checkbox" /> You hereby affirm & authorise Alphacare247
             to process the personal data as per the T&C.
           </div>
           <button class="del-button" type="submit">Get Free Call Now</button>
@@ -533,7 +532,10 @@
 
     <!-- 9. Call -->
     <section id="call">
-      <form action="https://script.google.com/macros/s/AKfycbyqWojR4MIUlslNkwTHWdWteBwcVsHkssGW8EVxajtMiz4iWjxMOcP5IdJi-9XgwkR9Pw/exec" method="post">
+      <form
+        action="https://script.google.com/macros/s/AKfycbyqWojR4MIUlslNkwTHWdWteBwcVsHkssGW8EVxajtMiz4iWjxMOcP5IdJi-9XgwkR9Pw/exec"
+        method="post"
+      >
         <div class="container-fluid text-center">
           <h3>Talk to our Health Advisor</h3>
           <div class="form d-flex justify-content-center align-items-center">
@@ -553,5 +555,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+      function showToast(message, type) {
+        const toastContainer = document.querySelector("#toast-container");
+        const toast = document.createElement("div");
+        toast.className = `toast ${type}`;
+        toast.textContent = message;
+        toastContainer.appendChild(toast);
+
+        // Show the toast
+        setTimeout(() => {
+          toast.classList.add("show");
+        }, 100);
+
+        // Hide and remove the toast after 3 seconds
+        setTimeout(() => {
+          toast.classList.remove("show");
+          setTimeout(() => {
+            toast.remove();
+          }, 500); // Allow time for fade-out before removing
+        }, 3000);
+      }
+
+      let form = document.querySelector("#myForm");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let data = new FormData(form);
+
+        fetch(
+          "https://script.google.com/macros/s/AKfycbyqWojR4MIUlslNkwTHWdWteBwcVsHkssGW8EVxajtMiz4iWjxMOcP5IdJi-9XgwkR9Pw/exec",
+          {
+            method: "POST",
+            body: data,
+          }
+        )
+          .then((res) => res.text())
+          .then((data) => {
+            form.reset();
+            showToast("Form submitted successfully!", "success");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            showToast(
+              "There was an error submitting the form. Please try again.",
+              "error"
+            );
+          });
+      });
+    </script>
   </body>
 </html>

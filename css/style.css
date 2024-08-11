@@ -1,109 +1,109 @@
 /* General */
 :root {
-    --primary-color: #00A6A6;
-    --secondary-color: #F5AE35;
-    --bg-green-color: #F7FDF3;
-    --bg-grey-color: #F6F6F6;
+  --primary-color: #00a6a6;
+  --secondary-color: #f5ae35;
+  --bg-green-color: #f7fdf3;
+  --bg-grey-color: #f6f6f6;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body,
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .green-button {
-    margin: 15px 0;
-    color: white;
-    background-color: var(--primary-color);
-    font-size: 2rem;
-    font-weight: 500;
-    padding: 10px 15px;
-    border: none;
+  margin: 15px 0;
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: none;
 }
 
 .yellow-button {
-    margin: 15px 0;
-    color: white;
-    background-color: var(--secondary-color);
-    font-size: 2rem;
-    font-weight: 500;
-    padding: 10px 15px;
-    border: none;
+  margin: 15px 0;
+  color: white;
+  background-color: var(--secondary-color);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: none;
 }
 
 .del-button {
-    margin: 15px 0;
-    color: white;
-    background: linear-gradient(to bottom, #2AC1C8, #03A2AA);
-    font-size: 2rem;
-    font-weight: 500;
-    padding: 10px 15px;
-    border: none;
+  margin: 15px 0;
+  color: white;
+  background: linear-gradient(to bottom, #2ac1c8, #03a2aa);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: none;
 }
 
 /* Banner */
-#banner{
-    margin: 0;
+#banner {
+  margin: 0;
 }
 
-#banner img{
-    width: 100%;
+#banner img {
+  width: 100%;
 }
 
 /* Main Form */
-#main-form{
-    margin: 25px 0;
-    font-size: 1.4rem;
+#main-form {
+  margin: 25px 0;
+  font-size: 1.4rem;
 }
 
-#main-form .field-form{
-    margin: 10px;
-    padding: 5px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% / 3);
-    box-shadow: 5px 5px 12px grey;
+#main-form .field-form {
+  margin: 10px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  box-shadow: 5px 5px 12px grey;
 }
 
-#main-form .field-form img{
-    width: 25px;
-    height: 25px;
+#main-form .field-form img {
+  width: 25px;
+  height: 25px;
 }
 
 #main-form .field-form input,
-#main-form .field-form select{
-    font-size: 1.4rem;
-    padding: 5px 15px;
-    height: 28px;
-    width: 100%;
-    border: none;
+#main-form .field-form select {
+  font-size: 1.4rem;
+  padding: 5px 15px;
+  height: 28px;
+  width: 100%;
+  border: none;
 }
 
 #main-form .field-form input:active,
 #main-form .field-form input:focus,
 #main-form .field-form select:focus,
-#main-form .field-form select:focus{
-    outline: none;
-    border: none;
-    box-shadow: none;
+#main-form .field-form select:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 
-#main-form .checkbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
+#main-form .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
 }
 
-#main-form .checkbox input{
-    width: 15px;
-    height: 15px;
+#main-form .checkbox input {
+  width: 15px;
+  height: 15px;
 }
 
 /* Steps */
@@ -132,219 +132,249 @@ html {
 } */
 
 /* Services */
-#services{
-    margin: 25px 10px;
-    font-size: 1.4rem;
+#services {
+  margin: 25px 10px;
+  font-size: 1.4rem;
 }
 
-#services h3{
-    font-size: 3.2rem;
-    font-weight: 700;
-    line-height: 3.6rem;
-    color: var(--primary-color);
+#services h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  color: var(--primary-color);
 }
 
-#services .button-container{
-    gap: 15px;
-} 
-
-#services .card-container{
-    margin-top: 20px;
-    padding: 25px 0;
-    background-color: var(--bg-green-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
+#services .button-container {
+  gap: 15px;
 }
 
-#services .card-container .yellow-button{
-    padding: 15px 25px;
-    border-radius: 30px;
-    margin: 5px;
+#services .card-container {
+  margin-top: 20px;
+  padding: 25px 0;
+  background-color: var(--bg-green-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
 }
 
-#services .orange-h3{
-    color: #FF914D;
-    margin-top: 20px;
+#services .card-container .yellow-button {
+  padding: 15px 25px;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+#services .orange-h3 {
+  color: #ff914d;
+  margin-top: 20px;
 }
 
 /* Stats */
 #statistics {
-    margin: 25px 0;
+  margin: 25px 0;
 }
 
 #statistics .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #statistics .card-1 {
-    margin: 0px 25px;
-    text-align: center;
+  margin: 0px 25px;
+  text-align: center;
 }
 
 #statistics .card-1 h3 {
-    font-size: 4.8rem;
-    line-height: 5rem;
-    font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5rem;
+  font-weight: 700;
 }
 
 #statistics .card-1 p {
-    font-size: 2.4rem;
-    line-height: 3rem;
+  font-size: 2.4rem;
+  line-height: 3rem;
 }
 
-#statistics .img-wrapper{
-    width: 150px;
-    height: 100px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#statistics .img-wrapper {
+  width: 150px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #statistics .card-1 img {
-    width: 100%;
+  width: 100%;
 }
 
 /* Testimonials */
-#testimonial{
-    margin: 25px 0;
-    font-size: 1.4rem;
+#testimonial {
+  margin: 25px 0;
+  font-size: 1.4rem;
 }
 
 #testimonial h2 {
-    font-size: 4rem;
-    font-weight: 700;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 #testimonial .card {
-    border: none;
-    background-color: #fffcf8;
-    box-shadow: 0.1rem -0.07rem 1.5rem 0.3rem rgb(0 0 0 / 26%);
-    border-radius: 1rem;
-    margin: 2rem;
-    padding: 4rem 2rem;
+  border: none;
+  background-color: #fffcf8;
+  box-shadow: 0.1rem -0.07rem 1.5rem 0.3rem rgb(0 0 0 / 26%);
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 4rem 2rem;
 }
 
 #testimonial .card i {
-    color: rgb(255, 191, 0);
-    font-size: 1.4rem;
+  color: rgb(255, 191, 0);
+  font-size: 1.4rem;
 }
 
 #testimonial .card p {
-    font-size: 1.6rem;
-    color: black;
+  font-size: 1.6rem;
+  color: black;
 }
 
 #testimonial .card h5 {
-    font-size: 3rem;
-    color: black;
-    font-weight: 700;
+  font-size: 3rem;
+  color: black;
+  font-weight: 700;
 }
 
 #testimonial .carousel-indicators {
-    margin-bottom: -3rem;
+  margin-bottom: -3rem;
 }
 
 #testimonial .carousel-indicators button {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: black;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: black;
 }
 
 /* Terms and Conditions */
 #terms-and-conditions {
-    margin: 25px 0;
-    font-size: 1.4rem;
+  margin: 25px 0;
+  font-size: 1.4rem;
 }
 
 /* Call */
-#call{
-    padding: 10px 0;
-    background-color: var(--primary-color);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: none;
+#call {
+  padding: 10px 0;
+  background-color: var(--primary-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: none;
 }
 
-.call-show{
-    display: block !important;
+.call-show {
+  display: block !important;
 }
 
-#call h3{
-    font-size: 2.4rem;
-    font-weight: 400;
-    line-height: 3rem;
-    color: white;
+#call h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: white;
 }
 
-#call .form{
-    margin-top: 10px;
+#call .form {
+  margin-top: 10px;
 }
 
-#call .form input{
-    width: 30%;
-    font-size: 1.8rem;
-    padding: 7px 15px;
-    border: none;
+#call .form input {
+  width: 30%;
+  font-size: 1.8rem;
+  padding: 7px 15px;
+  border: none;
 }
 
 #call .form input:focus,
-#call .form input:active{
-    outline: none;
+#call .form input:active {
+  outline: none;
 }
 
-#call .form button{
-    font-size: 1.8rem;
-    padding: 7px 15px;
-    background: linear-gradient(#F26061, #D84243);
-    color: white;
-    border: none;
-    font-weight: 600;
+#call .form button {
+  font-size: 1.8rem;
+  padding: 7px 15px;
+  background: linear-gradient(#f26061, #d84243);
+  color: white;
+  border: none;
+  font-weight: 600;
 }
 
 /* Footer */
 footer {
-    padding-bottom: 15px;
-    font-size: 1.4rem;
-    background-color: var(--bg-grey-color);
+  padding-bottom: 15px;
+  font-size: 1.4rem;
+  background-color: var(--bg-grey-color);
 }
 
 footer h3 {
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    margin: 28px 0;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin: 28px 0;
 }
 
 footer .content img {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 footer .content p:first-child {
-    font-size: 1.8rem;
-    font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 footer .contact img {
-    margin: 0px 5px;
+  margin: 0px 5px;
 }
 
 footer .credits {
-    color: var(--text-white);
-    border-top: 1px solid black;
-    padding-top: 20px;
-    margin-top: 30px;
-    font-weight: 500;
+  color: var(--text-white);
+  border-top: 1px solid black;
+  padding-top: 20px;
+  margin-top: 30px;
+  font-weight: 500;
 }
 
 footer .credits a {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.toast {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-size: 18px;
+}
+
+.toast.success {
+  background-color: green;
+}
+
+.toast.error {
+  background-color: red;
+}
+
+.toast.show {
+  opacity: 1;
 }
